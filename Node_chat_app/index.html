@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="/css1.css">
+</head>
+<body>
+    
+    <div class="backdrop"></div>
+        <form class="model">
+            <img class="img" src="/logo.png" alt="">
+            <h1 id="title">Welcome To Hike Messanger!!</h1><br />
+            <p id="content">Enter User Name : </p>
+            <input type="text" placeholder="Enter name..." autofocus ><br />
+            <button id="log">Login</button>
+        </form>
+
+
+    <section class="chat_section">
+        <div class="brand">
+            <img class="img" src="/logo.png" alt="">
+            <h1>Hike Messanger</h1>
+            <div style="margin-left: 80px;width: 50px;">
+                <p style="color: #2b88de; text-decoration:solid;">Online Users:</p> <br />
+                <ul class="users"><br /></ul>
+            </div>
+        </div>
+
+        <div class="msg_area">
+        </div>
+
+        <div class="msg-send">
+            <textarea id="textarea" cols="10"  placeholder="Write message..." autofocus  ></textarea>
+            <button class="btn"></button>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
